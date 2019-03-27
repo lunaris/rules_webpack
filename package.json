@@ -1,0 +1,9 @@
+{
+  "name": "rules_webpack",
+  "version": "1.0.0",
+  "description": "This project extends Bazel with build rules for Webpack.",
+  "dependencies": {
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0"
+  }
+}

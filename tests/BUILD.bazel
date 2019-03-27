@@ -1,0 +1,90 @@
+package(default_testonly = 1)
+
+load(
+    "@bazel_tools//tools/build_rules:test_rules.bzl",
+    "rule_test",
+)
+
+# load(
+#     "@com_habito_rules_purescript//purescript:purescript.bzl",
+#     "purescript_toolchain",
+# )
+#
+# purescript_toolchain(
+#     name = "purescript",
+#     version = "0.12.1",
+#     tools = [
+#         "@nixpkgs_purescript//:bin",
+#         "@nixpkgs_tar//:bin",
+#     ],
+#     psci_support = "@psc-package//:psci-support.purs",
+#
+#     # This toolchain is morally test only, but we can't set it as such because
+#     # there are non-test things that depend on it (e.g. the testing of
+#     # PureScript Nixpkgs rules in WORKSPACE).
+#     testonly = 0,
+# )
+#
+# rule_test(
+#     name = "test-library-simple",
+#     size = "small",
+#     generates = [
+#         "library-simple.purs-package",
+#         "library-simple@repl",
+#     ],
+#     rule = "//tests/library-simple",
+# )
+#
+# rule_test(
+#     name = "test-library-dependencies",
+#     size = "small",
+#     generates = [
+#         "library-dependencies.purs-package",
+#         "library-dependencies@repl",
+#     ],
+#     rule = "//tests/library-dependencies",
+# )
+#
+# rule_test(
+#     name = "test-library-prefix",
+#     size = "small",
+#     generates = [
+#         "library-prefix.purs-package",
+#         "library-prefix@repl",
+#     ],
+#     rule = "//tests/library-prefix",
+# )
+#
+# rule_test(
+#     name = "test-library-transitive",
+#     size = "small",
+#     generates = [
+#         "library-transitive.purs-package",
+#         "library-transitive@repl"
+#     ],
+#     rule = "//tests/library-transitive",
+# )
+#
+# rule_test(
+#     name = "test-library-foreign",
+#     size = "small",
+#     generates = [
+#         "library-foreign.purs-package",
+#         "library-foreign@repl"
+#     ],
+#     rule = "//tests/library-foreign",
+# )
+#
+# rule_test(
+#     name = "test-bundle-simple",
+#     size = "small",
+#     generates = ["bundle-simple.js"],
+#     rule = "//tests/bundle-simple",
+# )
+#
+# rule_test(
+#     name = "test-bundle-main",
+#     size = "small",
+#     generates = ["bundle-main.js"],
+#     rule = "//tests/bundle-main",
+# )
